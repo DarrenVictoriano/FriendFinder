@@ -83,16 +83,16 @@ var friendList = [
         name: "Six",
         photo: "https://nerdist.com/wp-content/uploads/2019/01/umbrellaacademy_vertical-superdead_rgb-337x500.jpg",
         scores: [
-            4,
-            4,
-            4,
-            4,
-            4,
-            2,
-            2,
-            2,
-            2,
-            2
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            3
         ]
     },
     {
@@ -104,10 +104,10 @@ var friendList = [
             5,
             5,
             5,
-            4,
-            4,
-            4,
-            4,
+            5,
+            5,
+            5,
+            5,
             4
         ]
     }

@@ -43,6 +43,11 @@ $("#submitBTN").on("click", function (event) {
         $.post("/friend", data, function (res) {
             // grab the result and send it to the modal
             console.log(res);
+
+            $("#matchName").text(res.name);
+            $("#matchImg").attr("src", res.photo);
+
+            $("#resultModal").modal("toggle");
         });
 
     } else {
