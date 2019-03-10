@@ -39,7 +39,11 @@ $("#submitBTN").on("click", function (event) {
             ]
         }
 
-        console.log(data);
+        // api link /addfriend
+        $.post("/friend", data, function (res) {
+            // grab the result and send it to the modal
+            console.log(res);
+        });
 
     } else {
         alert("fill the form!");

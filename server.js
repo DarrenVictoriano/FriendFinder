@@ -1,7 +1,6 @@
-var friends = require('./app/data/friends.js');
 var express = require('express');
 var html = require('./app/routing/htmlRoutes');
-var path = require('path');
+var api = require('./app/routing/apiRoutes');
 
 var app = express();
 var PORT = process.env.PORT || 8080;
@@ -13,9 +12,15 @@ app.use(express.json());
 // meka path known to express
 app.use(express.static('app/public'));
 
-// routes
+// html routes
 app.get("/survey", html.survey);
 app.get("/repo", html.github);
+
+// api routes
+app.get("/friend", api.getFriends);
+app.post("/friend", api.addFriend);
+
+// default route
 app.get("/*", html.home);
 
 
